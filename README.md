@@ -82,7 +82,13 @@ business_bot/
    https://aistudio.google.com/apikey).
 
 3. Open `business_agent.ipynb`, select the `.venv` kernel and run all cells. The last cell starts the chat
-   at http://127.0.0.1:7860, which also shows inside the notebook.
+   at http://127.0.0.1:7860, which also shows inside the notebook. To open the notebook, use VS Code with
+   the Jupyter extension, or install and start classic Jupyter:
+
+   ```bash
+   pip install notebook
+   jupyter notebook business_agent.ipynb
+   ```
 
 **Models.** The defaults run on a free Gemini key: `gemini-3.5-flash-lite` for the agent and
 `gemini-3.1-flash-lite` for the router. They are different models on purpose, so each has its own
@@ -173,8 +179,9 @@ All three are JSON Lines files in `logs/` (gitignored, because they contain cust
 
 ## Example conversation
 
-Conversation 1 from the saved notebook run (section 7.3), shortened. Router decisions and tool calls are
-printed in the notebook and shown as collapsible notes in the Gradio chat:
+Conversation 1 from one run of the notebook tests (section 7.3), shortened. The wording, and whether the
+model tries to guess an email, varies from run to run. Router decisions and tool calls are printed in the
+notebook and shown as collapsible notes in the Gradio chat:
 
 > **Customer:** Hi! Do you make birthday cakes?
 >
