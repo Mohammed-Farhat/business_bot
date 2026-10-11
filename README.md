@@ -36,13 +36,19 @@ business_bot/
 
 3. Open `business_agent.ipynb`, select the `.venv` kernel, and run all cells.
 
+**Models.** The defaults run on a free Gemini key: `gemini-3.5-flash-lite` for the agent and
+`gemini-3.1-flash-lite` for the router. They are different models on purpose, so each has its own
+free-tier per-minute limit. If a per-minute limit is hit, the notebook waits and retries. With a paid key
+you can set `GEMINI_MODEL=gemini-3.5-flash` in `.env` for stronger answers.
+
 ## Features
 
 _To be completed as the steps are built._
 
 - [x] Business identity (PDF + summary). Regenerate the PDF with `python scripts/make_about_pdf.py`
 - [x] Persona and instructions, clearly separated (notebook sections 3.1 and 3.2), assembled into `system_prompt`
-- [ ] Router: general question / lead collection / feedback
+- [x] Router: general question / lead collection / feedback (notebook section 6). An LLM classifier
+  with a keyword fallback; each route sets its own guidance, tools and `tool_choice`
 - [x] Tools: `record_customer_interest`, `record_feedback`, documented MCP-style (notebook section 5).
   Every call is printed and appended to `logs/leads.jsonl` or `logs/feedback.jsonl` (gitignored)
 - [ ] Agent loop with chat history and tool calling
