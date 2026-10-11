@@ -40,7 +40,7 @@ business_bot/
 
 _To be completed as the steps are built._
 
-- [ ] Business identity (PDF + summary)
+- [x] Business identity (PDF + summary). Regenerate the PDF with `python scripts/make_about_pdf.py`
 - [ ] Persona and instructions, clearly separated
 - [ ] Router: general question / lead collection / feedback
 - [ ] Tools: `record_customer_interest`, `record_feedback`
