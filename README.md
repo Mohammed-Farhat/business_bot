@@ -54,7 +54,9 @@ _To be completed as the steps are built._
 - [x] Agent loop with chat history (short-term memory) and tool calling (notebook section 7), plus a
   guardrail in code: a lead is only saved with an email the customer actually typed
 - [ ] Gradio ChatInterface
-- [ ] Bonus: reflection step with logged draft and revised replies
+- [x] Bonus: reflection step with logged draft and revised replies (notebook section 8). Every reply is
+  checked against the instructions before it is sent; draft and final reply go to `logs/reflections.jsonl`,
+  and feedback the draft forgot to log is logged by the reflection step
 
 ## Demo video
 
