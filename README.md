@@ -41,7 +41,7 @@ business_bot/
 _To be completed as the steps are built._
 
 - [x] Business identity (PDF + summary). Regenerate the PDF with `python scripts/make_about_pdf.py`
-- [ ] Persona and instructions, clearly separated
+- [x] Persona and instructions, clearly separated (notebook sections 3.1 and 3.2), assembled into `system_prompt`
 - [ ] Router: general question / lead collection / feedback
 - [ ] Tools: `record_customer_interest`, `record_feedback`
 - [ ] Agent loop with chat history and tool calling
