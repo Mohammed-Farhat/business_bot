@@ -43,7 +43,8 @@ _To be completed as the steps are built._
 - [x] Business identity (PDF + summary). Regenerate the PDF with `python scripts/make_about_pdf.py`
 - [x] Persona and instructions, clearly separated (notebook sections 3.1 and 3.2), assembled into `system_prompt`
 - [ ] Router: general question / lead collection / feedback
-- [ ] Tools: `record_customer_interest`, `record_feedback`
+- [x] Tools: `record_customer_interest`, `record_feedback`, documented MCP-style (notebook section 5).
+  Every call is printed and appended to `logs/leads.jsonl` or `logs/feedback.jsonl` (gitignored)
 - [ ] Agent loop with chat history and tool calling
 - [ ] Gradio ChatInterface
 - [ ] Bonus: reflection step with logged draft and revised replies
