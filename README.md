@@ -51,7 +51,8 @@ _To be completed as the steps are built._
   with a keyword fallback; each route sets its own guidance, tools and `tool_choice`
 - [x] Tools: `record_customer_interest`, `record_feedback`, documented MCP-style (notebook section 5).
   Every call is printed and appended to `logs/leads.jsonl` or `logs/feedback.jsonl` (gitignored)
-- [ ] Agent loop with chat history and tool calling
+- [x] Agent loop with chat history (short-term memory) and tool calling (notebook section 7), plus a
+  guardrail in code: a lead is only saved with an email the customer actually typed
 - [ ] Gradio ChatInterface
 - [ ] Bonus: reflection step with logged draft and revised replies
 
