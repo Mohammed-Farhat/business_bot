@@ -1,0 +1,12 @@
+# LLM client (used with Gemini's OpenAI-compatible endpoint)
+openai==3.28.0
+# Loads GEMINI_API_KEY from .env
+python-dotenv==1.2.4
+# Reads me/about_business.pdf into the agent's context
+pypdf==6.20.0
+# Chat UI
+gradio==6.30.0
+# Generates me/about_business.pdf (scripts/make_about_pdf.py)
+reportlab==5.0.1
+# Runs business_agent.ipynb with this environment's kernel
+ipykernel==7.3.0

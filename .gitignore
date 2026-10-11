@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific
+# Assignment handout (course material, not part of the submission)
+C3 - Introduction to Agents.pdf
+# Runtime logs from the bot's tools (contain test lead emails)
+logs/
