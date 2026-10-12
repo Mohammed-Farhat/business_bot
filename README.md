@@ -4,6 +4,8 @@ EECE 503P/798S: Agentic Systems · Assignment C3 (Introduction to Agents)
 
 **Student:** Mohammed Farhat · **ID:** 202772669
 
+**GitHub repository:** https://github.com/Mohammed-Farhat/business_bot
+
 **Nour** is the virtual host of *Cedar & Crumb Bakery*, a fictional artisan bakery in Mar Mikhael,
 Beirut. Nour answers questions from the business profile, routes every message to the right handling
 path, collects leads, and logs customer feedback and unanswered questions through tool calls. Before
@@ -11,6 +13,7 @@ each reply is sent, a reflection step checks it against the agent's instructions
 called through its OpenAI-compatible API, and the chat runs in Gradio.
 
 **Demo video:** [Watch on Google Drive](https://drive.google.com/file/d/1n6enzVHkKBnTr95JXu4iiZyi0kLFUGfm/view?usp=sharing)
+(the same recording is in the repo under `demo_video/`)
 
 ## How a message flows through the agent
 
@@ -62,8 +65,8 @@ business_bot/
 ├── scripts/
 │   └── make_about_pdf.py        # Generates about_business.pdf
 ├── logs/                        # Created at runtime by the tools (gitignored)
+├── demo_video/                  # Screen recording of the demo
 ├── business_agent.ipynb         # Main chatbot code
-├── DEMO_SCRIPT.md               # Scene-by-scene script for the demo video
 ├── .env.example                 # Template for .env (API key and model names)
 ├── .env                         # Your API key (gitignored, never committed)
 └── requirements.txt             # Libraries used
