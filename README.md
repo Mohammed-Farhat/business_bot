@@ -2,13 +2,15 @@
 
 EECE 503P/798S: Agentic Systems · Assignment C3 (Introduction to Agents)
 
+**Student:** Mohammed Farhat · **ID:** 202772669
+
 **Nour** is the virtual host of *Cedar & Crumb Bakery*, a fictional artisan bakery in Mar Mikhael,
 Beirut. Nour answers questions from the business profile, routes every message to the right handling
 path, collects leads, and logs customer feedback and unanswered questions through tool calls. Before
 each reply is sent, a reflection step checks it against the agent's instructions. The model is Gemini,
 called through its OpenAI-compatible API, and the chat runs in Gradio.
 
-**Demo video:** _link to be added_
+**Demo video:** [Watch on Google Drive](https://drive.google.com/file/d/1n6enzVHkKBnTr95JXu4iiZyi0kLFUGfm/view?usp=sharing)
 
 ## How a message flows through the agent
 
